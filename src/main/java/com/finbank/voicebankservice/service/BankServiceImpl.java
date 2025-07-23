@@ -14,8 +14,10 @@ public class BankServiceImpl implements BankService {
     }
 
     @Override
-    public String transfer(String accountNumber, Double amount) {
-        return null;
+    public String transfer(String fromAccount, String toAccount, Double amount) {
+        System.out.println("Transferring ₹" + amount + " from " + fromAccount + " to " + toAccount);
+
+        return "Successfully transferred ₹" + amount + " from " + fromAccount + " to " + toAccount;
     }
 
     @Override
